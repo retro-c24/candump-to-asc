@@ -42,7 +42,7 @@ def main(input_file, output_file):
 
             relative_timestamp = timestamp - start_time
             formatted_payload = ' '.join([payload[i:i+2] for i in range(0, len(payload), 2)])
-            dlc = len(formatted_payload.split())
+            dlc = len(formatted_payload.split())-1
 
             formatted_can_id = format_arb_id(can_id)
 
